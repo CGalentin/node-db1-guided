@@ -1,0 +1,27 @@
+-- database: ./school.db3
+
+    INSERT INTO Teachers (Name, email)
+    VALUES
+    ('Mr Doe', 'jdoe@email.com'),
+    ('Mrs Doe', 'bdoe@email.com');
+    --Students
+    INSERT INTO Students (Name, Email)
+    VALUES
+    ('Alison Joe', 'alice@email.com'),
+    ('Carl Davis', 'carl@email.com'),
+    ('Bob Jones', 'bob@email.com');
+
+    --Courses
+    INSERT INTO Courses (CourseName, TeacherId, Credits)
+    VALUES
+    ('Intro to Math', 1, 3),
+    ('English', 2, 3),
+    ('Intro to Computer Science', 2, 4);
+
+    --Enrollments
+    INSERT INTO Enrollments (StudentId, CourseId)
+    VALUES
+    (1,1),
+    (1,3),
+    (2,2),
+    (2,3);
